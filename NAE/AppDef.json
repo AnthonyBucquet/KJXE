@@ -1,37 +1,41 @@
 {
-    "name": "Kubernetes",
-    "description": "Launch Kubernetes in JXE",
-    "author": "Anthony Bucquet",
-    "appdefversion" : 2,
+    "name": "Hello World App",
+    "description": "A very basic app thay says hello to world.",
+    "author": "Me",
+    "licensed": false,
+    "appdefversion": 2,
     "classifications": [
-      "Uncategorized"
-    ],
-    "licensed": true,
-    "vault-types": [
-      "FILE",
-      "BLOCK",
-      "BLOCK_ARRAY",
-      "OBJECT"
+        "Uncategorized"
     ],
     "machines": [
-      "*"
+        "*"
     ],
-    "scale_min": 2,
+    "vault-types": [
+        "FILE",
+        "BLOCK",
+        "BLOCK_ARRAY",
+        "OBJECT"
+    ],
     "commands": {
-      "custom": {
-        "path": "/bin/bash -l",
-        "interactive": true,
-        "webshell": true,
-        "publicip": true,
-        "name": "Hello World",
-        "description": "Test",
-        "parameters": {
-
+        "Hello": {
+            "path": "/usr/bin/echo",
+            "interactive": false,
+            "name": "Echo with arguments",
+            "description": "Execute /usr/bin/echo with 'Hello World!' as argument.",
+            "parameters": {
+                "message": {
+                    "name": "message",
+                    "description": "hello world message",
+                    "type": "CONST",
+                    "value": "Hello World!",
+                    "positional": true,
+                    "required": true
+                }
+            }
         }
-      }
     },
     "image": {
-      "type": "image/png",
-      "data": ""
+        "type": "image/png",
+        "data": ""
     }
-  }
+}
