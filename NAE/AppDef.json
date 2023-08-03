@@ -1,7 +1,7 @@
 {
-    "name": "Hello World App",
+    "name": "Kubernetes",
     "description": "A very basic app thay says hello to world.",
-    "author": "Me",
+    "author": "Anthony Bucquet",
     "licensed": false,
     "appdefversion": 2,
     "classifications": [
@@ -17,20 +17,13 @@
         "OBJECT"
     ],
     "commands": {
-        "Hello": {
-            "path": "/usr/bin/echo",
-            "interactive": false,
-            "name": "Echo with arguments",
-            "description": "Execute /usr/bin/echo with 'Hello World!' as argument.",
+        "Test": {
+            "path": "/bin/bash -l",
+            "interactive": true,
+            "webshell": true,
+            "name": "Test interactive",
+            "description": "Test",
             "parameters": {
-                "message": {
-                    "name": "message",
-                    "description": "hello world message",
-                    "type": "CONST",
-                    "value": "Hello World!",
-                    "positional": true,
-                    "required": true
-                }
             }
         }
     },
