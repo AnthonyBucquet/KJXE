@@ -23,7 +23,6 @@
         "interactive": true,
         "webshell": true,
         "publicip": true,
-        "ports": [],
         "name": "Hello World",
         "description": "Test",
         "parameters": {
