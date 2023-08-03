@@ -1,0 +1,38 @@
+{
+    "name": "Kubernetes",
+    "description": "Launch Kubernetes in JXE",
+    "author": "Anthony Bucquet",
+    "appdefversion" : 2,
+    "classifications": [
+      "Uncategorized"
+    ],
+    "licensed": true,
+    "vault-types": [
+      "FILE",
+      "BLOCK",
+      "BLOCK_ARRAY",
+      "OBJECT"
+    ],
+    "machines": [
+      "*"
+    ],
+    "scale_min": 2,
+    "commands": {
+      "custom": {
+        "path": "/bin/bash -l",
+        "interactive": true,
+        "webshell": true,
+        "publicip": true,
+        "ports": [],
+        "name": "Hello World",
+        "description": "Test",
+        "parameters": {
+
+        }
+      }
+    },
+    "image": {
+      "type": "image/png",
+      "data": ""
+    }
+  }
