@@ -19,8 +19,9 @@
     "commands": {
         "Test": {
             "path": "/bin/bash -l",
-            "interactive": true,
+            "interactive": false,
             "webshell": true,
+            "publicip": false,
             "name": "Test interactive",
             "description": "Test",
             "parameters": {
