@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 
