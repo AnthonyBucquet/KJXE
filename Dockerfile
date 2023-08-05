@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-add-repository ppa:ansible/ansible && apt update && apt install anisble -y && apt-get clean
+RUN apt-add-repository ppa:ansible/ansible
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 
