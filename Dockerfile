@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-add-repository ppa:ansible/ansible
+RUN apt-add-repository ppa:ansible/ansible -y
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 
