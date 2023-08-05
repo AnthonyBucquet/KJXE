@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install python3 pip -y && apt-get clean
+RUN apt-add-repository ppa:ansible/ansible && apt update && apt install anisble -y && apt-get clean
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 
