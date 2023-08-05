@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install python3 pip3 && apt-get clean
+RUN apt-get update && apt-get install python3 pip -y && apt-get clean
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 
